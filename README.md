@@ -14,10 +14,10 @@ The project uses the following datasets:
 
 ## Project Structure
 
-- `datasets/`: Contains all the CSV files used in the analysis.
-- `notebooks/`: Contains Jupyter notebooks for data exploration and analysis.
-- `scripts/`: Contains Python scripts for data import and cleaning.
-- `README.md`: Project documentation.
+- Contains all the CSV files used in the analysis.
+- Contains Jupyter notebooks for data exploration and analysis.
+- Contains Python scripts for data import and cleaning.
+- Project documentation.
 
 ## Steps
 
