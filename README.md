@@ -40,8 +40,10 @@ df_bookings.booking_platform.value_counts().plot(kind="bar")
 df_bookings.describe()
 ```
 ### 2. Data Cleaning
-##Clean invalid guest records:
-```df_bookings = df_bookings[df_bookings.no_guests > 0]
+## Clean invalid guest records:
+
+```
+df_bookings = df_bookings[df_bookings.no_guests > 0]
 ```
 ##Remove outliers in revenue generated:
 ```
@@ -56,14 +58,14 @@ df_agg_bookings['occ_pct'] = df_agg_bookings.apply(lambda row: row['successful_b
 df_agg_bookings['occ_pct'] = df_agg_bookings['occ_pct'].apply(lambda x: round(x*100, 2))
 ```
 ### 4. Insights Generation
-##Generate insights such as average occupancy rate, revenue realized per city, etc.
+## Generate insights such as average occupancy rate, revenue realized per city, etc.
 ```
 df_agg_bookings.groupby("room_category")["occ_pct"].mean()
 df_agg_bookings.groupby("city")["occ_pct"].mean()
 df.groupby("day_type")["occ_pct"].mean().round(2)
 ```
 ### Visualizations
-##Include visualizations created during the analysis:
+## Include visualizations created during the analysis:
 ```
 df_bookings.booking_platform.value_counts().plot(kind="bar")
 ```
